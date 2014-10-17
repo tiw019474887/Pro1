@@ -102,6 +102,19 @@ body,td,th {
         </form></td>
       <td width="675">
 		<?php
+		$allowed_types=array('jpg','jpeg','gif','png');  
+$dir    ="ก๋วยเตี๋ยว.jpg";  
+$files1 = scandir($dir);  
+foreach($files1 as $key=>$value){  
+    if($key>1){  
+        $file_parts = explode('.',$value);  
+        $ext = strtolower(array_pop($file_parts));  
+        if(in_array($ext,$allowed_types)){  
+            echo "<img style='width:100px;' src='".$dir.$value."'/>&nbsp;";     
+        }  
+  
+    }  
+}  
 		if(isset($_POST['select'])){
 		$selected_val = $_POST['select'];  
 		echo "เส้น :     " .$selected_val."<br>";
