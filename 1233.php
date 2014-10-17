@@ -123,8 +123,8 @@ body,td,th {
 		$aa = $a*15;
 		if($aa != 0){
 			echo "ไข่ยางมะตูม :   $a  ฟอง    ".$aa." บาท"."<br>";
-			$sum = $sum*15;
-		}
+			
+		}$sum = $sum*15;
 		}
 		if(isset($_POST['fvalue2'])){
 		$b = $_POST['fvalue2'];
@@ -139,8 +139,8 @@ body,td,th {
 		$cc = $c*55;
 		if($cc != 0){
 			echo "ปลาหมึก :    $c  ตัว    ".$cc." บาท"."<br>";
-			$sum = $sum*55;
-		}
+			
+		}$sum = $sum*55;
 		}
 		if(isset($_POST['fvalue4'])){
 		if($_POST['fvalue4'] != " "){
