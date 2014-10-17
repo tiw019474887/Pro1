@@ -34,8 +34,8 @@ body,td,th {
       </font></marquee></td>
     </tr>
     <tr>
-      <td width="6">&nbsp;</td>
-      <td width="341"><h1>สั่งก๋วยเตี๋ยว</h1>
+      <td width="12">&nbsp;</td>
+      <td width="299"><h1>สั่งก๋วยเตี๋ยว</h1>
         <p>
    <form method="post" action="1233.php"font="quark bold">    
        	<div class="form-group">
@@ -101,7 +101,7 @@ body,td,th {
 				</div>    
                        
         </form></td>
-      <td width="639"><!-- ใส่ php  ในนี้นะน่าจะใช่  --></td>
+      <td width="675"><!-- ใส่ php  ในนี้นะน่าจะใช่  --></td>
 	  
     </tr>
    
