@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+</head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,9 +37,9 @@ body,td,th {
     </tr>
     <tr>
       <td width="10">&nbsp;</td>
-      <td width="307"><h1>สั่งก๋วยเตี๋ยว</h1>
-        <p>
-   <form method="post" action="1233.php"font="quark bold">    
+      <td width="307" ><h1><center>สั่งก๋วยเตี๋ยวต้มยำ</center></h1>
+      <center><h3>บ้านลายจุดข้างวัง   </h3></center>
+      <form class="form-group" method="post" action="1233.php"font="quark bold">    
        	<div class="form-group">
           <label for="select"><h4>เลือกเส้น :</h4></label>
           <select  class="form-control" name="select" id="select" >
