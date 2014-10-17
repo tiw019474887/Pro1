@@ -141,12 +141,12 @@ body,td,th {
 		}
 		}
 		if(isset($_POST['fvalue4'])){
-		if($_POST['fvalue4'] != " "){
-			echo "เพิ่มเติม : ".$_POST['fvalue4']."<br>";
+		if($_POST['fvalue4'] == " "){
 		}
+		echo "เพิ่มเติม : ".$_POST['fvalue4']."<br>";
 		}
 		if(isset($_POST['fvalue5'])){
-			echo "name: ".$_POST['fvalue5']."<br>";
+			echo "ชื่อผู้สั่ง:   ".$_POST['fvalue5']."<br>";
 			$sum = $sum+35;
 			echo "รวมเป็นเงิน :  ".$sum." บาท"."<br>";
 		}
