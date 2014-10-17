@@ -121,19 +121,16 @@ body,td,th {
 	  ?>
 	  </td>
 	 
-=======
+
       <td width="675"><!-- ใส่ php  ในนี้นะน่าจะใช่  --></td>
 	  
->>>>>>> origin/master
+
     </tr>
    
   </tbody>
 </table>
 
-<<<<<<< HEAD
 
-=======
-5555555555555555555555
->>>>>>> origin/master
+
 </body>
 </html>
