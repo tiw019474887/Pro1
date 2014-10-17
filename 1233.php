@@ -120,6 +120,7 @@ body,td,th {
 		$aa = $a*15;
 		if($aa != 0){
 			echo "ไข่ยางมะตูม :   $a  ฟอง    ".$aa." บาท"."<br>";
+			$sum = 0;
 			$sum = $sum+$aa;
 		}
 		}
@@ -147,7 +148,7 @@ body,td,th {
 		if(isset($_POST['fvalue5'])){
 			echo "name: ".$_POST['fvalue5']."<br>";
 			$sum = $sum+35;
-			echo "รวมเป็นเงิน :  ".$sum." บาท";
+			echo "รวมเป็นเงิน :  ".$sum." บาท"."<br>";
 		}
 		?>
 	  </td>
