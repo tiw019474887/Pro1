@@ -37,7 +37,7 @@ body,td,th {
       <td width="6">&nbsp;</td>
       <td width="341"><h1>สั่งก๋วยเตี๋ยว</h1>
         <p>
-   <form font="quark bold">    
+   <form method="post" action="1233.php"font="quark bold">    
        	<div class="form-group">
           <label for="select"><h4>เลือกเส้น :</h4></label>
           <select  class="form-control" name="select" id="select" >
@@ -70,25 +70,25 @@ body,td,th {
        <div class="form-group">
     	   <h4>ใส่อะไรเป็นพิเศษ:</h4>
         <label for="fvalue1">ใส่ไข่ยางมะตูม 15 บาท/ฟอง:</label>
-			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="กี่ฟอง" name="fvalue1">
+			<input type="text" class="form-control" id="exampleInputEmail1" placeholder="กี่ฟอง" name="fvalue1">
             
            
         <label for="fvalue2">ใส่กุ้ง 55 บาท/ตัว: </label>
-			<input type="" class="form-control" id="exampleInputEmail1" placeholder="กี่ตัว" name="fvalue2">
+			<input type="text" class="form-control" id="exampleInputEmail1" placeholder="กี่ตัว" name="fvalue2">
             
             
         <label for="fvalue3">ใส่ปลาหมึก 55 บาท/ตัว: </label>
-    		<input type="" class="form-control" id="exampleInputEmail1" placeholder="กี่ตัว" name="fvalue3">
+    		<input type="text" class="form-control" id="exampleInputEmail1" placeholder="กี่ตัว" name="fvalue3">
           </div>
                 <div class="form-group">
                 	<label for="fvalue4"><h4>เพิ่มเติม: </h4> 
                 	(สิ่งที่ต้องการเพิ่มเติม เช่น ไม่ใส่ผัก)</label>
-    		<input type="" class="form-control" id="exampleInputEmail1" placeholder="" name="fvalue4">
+    		<input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="fvalue4">
                 </div>
                 
                 <div class="form-group">
                 	<label for="fvalue5"><h4>ชื่อผู้สั่ง</h4></label>
-    		<input type="" class="form-control" id="exampleInputEmail1" placeholder="" name="fvalue5">
+    		<input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="fvalue5">
                 </div>  
                 
                 <div class="control-group">
