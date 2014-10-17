@@ -26,7 +26,7 @@ body,td,th {
 <table width="1000" border="0" align="center">
   <tbody>
     <tr>
-      <td colspan="3"><img src="ก๋วยเตี๋ยว.png" width="250" height="242" alt=""/></td>
+      <td colspan="3">&nbsp;</td>
     </tr>
     <tr>
       <td colspan="3"><marquee align="left"><font size="+1">
@@ -109,7 +109,8 @@ body,td,th {
 		
 		if(isset($_POST['select'])){
 		$selected_val = $_POST['select'];  
-		echo "รายการชำระเงิน";<br>
+		
+		echo "รายการชำระเงิน";"<br>";
 		echo "เส้น :     " .$selected_val."<br>";
 		}
 		if(isset($_POST['CheckboxGroup'])){
