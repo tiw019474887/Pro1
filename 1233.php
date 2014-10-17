@@ -106,9 +106,10 @@ body,td,th {
         
         
 		<?php
-		echo "รายการชำระเงิน";
+		
 		if(isset($_POST['select'])){
 		$selected_val = $_POST['select'];  
+		echo "รายการชำระเงิน";
 		echo "เส้น :     " .$selected_val."<br>";
 		}
 		if(isset($_POST['CheckboxGroup'])){
