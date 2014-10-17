@@ -26,7 +26,7 @@ body,td,th {
 <table width="1000" border="0" align="center">
   <tbody>
     <tr>
-      <td colspan="3">&nbsp;</td>
+      <td colspan="3"><img src="../../../Desktop/งานก๋วยเตี๋ยว/ก๋วยเตี๋ยว.png" width="250" height="242" alt=""/></td>
     </tr>
     <tr>
       <td colspan="3"><marquee align="left"><font size="+1">
