@@ -27,7 +27,7 @@ body,td,th {
 <table width="66%" border="0" align="center">
   <tbody>
     <tr>
-      <td colspan="3" align="center"><img src="Untitled-1.jpg" width="1067" height="250" alt=""/></td>
+      <td colspan="3" align="center"></td>
     </tr>
     <tr>
       <td width="3%"></td>
