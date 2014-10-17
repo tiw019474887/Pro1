@@ -100,14 +100,13 @@ body,td,th {
 					</div>
 				</div>                          
         </form></td>
-      <td width="675">
+      <td width="675" align="center" valign="top">
+		
+		<p><img src="ก๋วยเตี๋ยว.png" width="200" height="193" alt=""/></p>
+        
+        
 		<?php
-		$file = "ก๋วยเตี๋ยว.jpg";  
-  
-header('Content-Type:image/jpeg');  
-header('Content-Length: '.filesize($file));  
-readfile($file); 
- 
+		echo "รายการชำระเงิน";
 		if(isset($_POST['select'])){
 		$selected_val = $_POST['select'];  
 		echo "เส้น :     " .$selected_val."<br>";
