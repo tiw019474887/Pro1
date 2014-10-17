@@ -98,16 +98,13 @@ body,td,th {
 							class="btn btn-warning">สั่ง</button>
 						<button input type="reset" name="Submit1" value="   RESET  " class="btn btn-danger">RESET</button>
 					</div>
-				</div>    
-                       
+				</div>                          
         </form></td>
-
       <td width="675">
 		<?php
-		
 		if(isset($_POST['select'])){
 		$selected_val = $_POST['select'];  
-		echo "You have selected :" .$selected_val."<br>";
+		echo "เส้น :     " .$selected_val."<br>";
 		}
 		if(isset($_POST['CheckboxGroup'])){
 		for($i=0;$i<count($_POST["CheckboxGroup"]);$i++){
@@ -153,16 +150,9 @@ body,td,th {
 			echo "รวมเป็นเงิน :  ".$sum." บาท";
 		}
 		?>
-	  
 	  </td>
-	  
-
     </tr>
-   
   </tbody>
 </table>
-
-
-
 </body>
 </html>
