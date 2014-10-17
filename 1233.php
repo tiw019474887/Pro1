@@ -150,8 +150,8 @@ body,td,th {
 		if(isset($_POST['fvalue5'])){
 			echo "name: ".$_POST['fvalue5']."<br>";
 			$sum = $sum+35;
+			echo "รวมเป็นเงิน :  ".$sum." บาท";
 		}
-		echo "รวมเป็นเงิน :  ".$sum." บาท";
 		?>
 	  
 	  </td>
