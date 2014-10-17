@@ -105,22 +105,6 @@ body,td,th {
 				</div>    
                        
         </form></td>
-<<<<<<< HEAD
-      <td width="675">  
-	
-	  <?php
-		if(isset($_POST['select'])){
-		$selected_val = $_POST['select'];  
-		echo "You have selected :" .$selected_val;
-		}
-		
-		
-		
-		
-		
-	  ?>
-	  </td>
-	 
 
       <td width="675"><!-- ใส่ php  ในนี้นะน่าจะใช่  --></td>
 	  
