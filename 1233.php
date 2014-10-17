@@ -141,9 +141,9 @@ body,td,th {
 		}
 		}
 		if(isset($_POST['fvalue4'])){
-		if($_POST['fvalue4'] == " "){
+		if($_POST['fvalue4'] != " "){
+			echo "เพิ่มเติม : ".$_POST['fvalue4']."<br>";
 		}
-		echo "เพิ่มเติม : ".$_POST['fvalue4']."<br>";
 		}
 		if(isset($_POST['fvalue5'])){
 			echo "ชื่อผู้สั่ง:   ".$_POST['fvalue5']."<br>";
