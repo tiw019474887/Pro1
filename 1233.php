@@ -106,7 +106,59 @@ body,td,th {
                        
         </form></td>
 
-      <td width="675"><!-- ใส่ php  ในนี้นะน่าจะใช่  --></td>
+      <td width="675">
+		<?php
+		
+		if(isset($_POST['select'])){
+		$selected_val = $_POST['select'];  
+		echo "You have selected :" .$selected_val."<br>";
+		}
+		if(isset($_POST['CheckboxGroup'])){
+		for($i=0;$i<count($_POST["CheckboxGroup"]);$i++){
+		if(trim($_POST["CheckboxGroup"][$i]) != "")
+		{
+		$box = $_POST["CheckboxGroup"][$i];
+		echo "ใส่ :     ".$box."<br>";
+		}
+		}
+		}
+		if(isset($_POST['fvalue1'])){
+		$a = $_POST['fvalue1'];
+		$aa = $a*15;
+		if($aa != 0){
+			echo "ไข่ยางมะตูม :   $a  ฟอง    ".$aa." บาท"."<br>";
+			$sum = $sum*15;
+		}
+		}
+		if(isset($_POST['fvalue2'])){
+		$b = $_POST['fvalue2'];
+		$bb = $b*55;
+		if($bb != 0){
+			echo "กุ้ง :   $b  ตัว     ".$bb." บาท"."<br>";
+			$sum = $sum*55;
+		}
+		}
+		if(isset($_POST['fvalue3'])){
+		$c = $_POST['fvalue3'];
+		$cc = $c*55;
+		if($cc != 0){
+			echo "ปลาหมึก :    $c  ตัว    ".$cc." บาท"."<br>";
+			$sum = $sum*55;
+		}
+		}
+		if(isset($_POST['fvalue4'])){
+		if($_POST['fvalue4'] != " "){
+			echo "เพิ่มเติม : ".$_POST['fvalue4']."<br>";
+		}
+		}
+		if(isset($_POST['fvalue5'])){
+			echo "name: ".$_POST['fvalue5']."<br>";
+			$sum = $sum+35;
+		}
+		echo "รวมเป็นเงิน :  ".$sum." บาท";
+		?>
+	  
+	  </td>
 	  
 
     </tr>
