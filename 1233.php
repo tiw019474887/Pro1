@@ -52,23 +52,19 @@ body,td,th {
         <p>
         <div class="form-group">
           <label>
-            <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_0">
+            <input type="checkbox" name="CheckboxGroup[]" value="หมู" id="CheckboxGroup1_0">
             หมู</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup2" value="checkbox" id="CheckboxGroup1_1">
+            <input type="checkbox" name="CheckboxGroup[]" value="ลูกชิ้น" id="CheckboxGroup1_1">
             ลูกชิ้น</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup3" value="checkbox" id="CheckboxGroup1_2">
+            <input type="checkbox" name="CheckboxGroup[]" value="หมูสับ" id="CheckboxGroup1_2">
             หมูสับ</label>
           <br>
           <label>
-<<<<<<< HEAD
-            <input type="checkbox" name="CheckboxGroup3" value="checkbox" id="CheckboxGroup1_3">
-=======
-            <input type="checkbox" name="CheckboxGroup4" value="checkbox" id="CheckboxGroup1_3">
->>>>>>> origin/master
+            <input type="checkbox" name="CheckboxGroup[]" value="ตับลวก" id="CheckboxGroup1_4">
             ตับลวก</label>
       </p></div>
        <div class="form-group">
