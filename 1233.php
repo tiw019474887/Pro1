@@ -64,7 +64,11 @@ body,td,th {
             หมูสับ</label>
           <br>
           <label>
+<<<<<<< HEAD
             <input type="checkbox" name="CheckboxGroup3" value="checkbox" id="CheckboxGroup1_3">
+=======
+            <input type="checkbox" name="CheckboxGroup4" value="checkbox" id="CheckboxGroup1_3">
+>>>>>>> origin/master
             ตับลวก</label>
       </p></div>
        <div class="form-group">
@@ -101,6 +105,7 @@ body,td,th {
 				</div>    
                        
         </form></td>
+<<<<<<< HEAD
       <td width="675">  
 	
 	  <?php
@@ -116,11 +121,19 @@ body,td,th {
 	  ?>
 	  </td>
 	 
+=======
+      <td width="675"><!-- ใส่ php  ในนี้นะน่าจะใช่  --></td>
+	  
+>>>>>>> origin/master
     </tr>
    
   </tbody>
 </table>
 
+<<<<<<< HEAD
 
+=======
+5555555555555555555555
+>>>>>>> origin/master
 </body>
 </html>
