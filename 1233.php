@@ -23,16 +23,19 @@ body,td,th {
 </head>
 
 <body>
-
-<table width="66%" border="0" align="center">
+<table width="1000" border="0" align="center">
   <tbody>
     <tr>
-      <td colspan="3" align="center"></td>
+      <td colspan="3">&nbsp;</td>
     </tr>
     <tr>
-      <td width="3%"></td>
-     
-      <td width="65%"><h1>สั่งก๋วยเตี๋ยว</h1>
+      <td colspan="3"><marquee align="left"><font size="+1">
+      ก๋วยเตี๋ยวต้มยำบ้านลายจุดข้างวัง ยินดีตอนรับ เชิญสั่งตามใจชอบเลยนะ^^
+      </font></marquee></td>
+    </tr>
+    <tr>
+      <td width="6">&nbsp;</td>
+      <td width="341"><h1>สั่งก๋วยเตี๋ยว</h1>
         <p>
    <form font="quark bold">    
        	<div class="form-group">
@@ -97,10 +100,13 @@ body,td,th {
 					</div>
 				</div>    
                        
-        </form>
-      <td width="100%"></td>
-    
-  
+        </form></td>
+      <td width="639"><!-- ใส่ php  ในนี้นะน่าจะใช่  --></td>
+    </tr>
+   
+  </tbody>
 </table>
+
+
 </body>
 </html>
