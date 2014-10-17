@@ -11,8 +11,9 @@
 @import url("1234/stylesheet.css");
 
 body {
-	background-color: #A1F4D4;
+	background-color: #FFFFFF;
 	;
+	
 }
 body,td,th {
 	font-family: "1234";
@@ -23,10 +24,10 @@ body,td,th {
 </head>
 
 <body>
-<table width="1000" border="0" align="center">
+<table width="785" border="0" align="center">
   <tbody>
     <tr>
-      <td colspan="3">&nbsp;</td>
+      <td colspan="3"><img src="Untitled-1.png" width="800" height="300" alt=""/></td>
     </tr>
     <tr>
       <td colspan="3"><marquee align="left"><font size="+1">
@@ -34,8 +35,8 @@ body,td,th {
       </font></marquee></td>
     </tr>
     <tr>
-      <td width="12">&nbsp;</td>
-      <td width="299"><h1>สั่งก๋วยเตี๋ยว</h1>
+      <td width="10">&nbsp;</td>
+      <td width="307"><h1>สั่งก๋วยเตี๋ยว</h1>
         <p>
    <form method="post" action="1233.php"font="quark bold">    
        	<div class="form-group">
@@ -100,17 +101,18 @@ body,td,th {
 					</div>
 				</div>                          
         </form></td>
-      <td width="675" align="center" valign="top">
+      <td width="454" align="center" valign="top">
 		
 		<p><img src="ก๋วยเตี๋ยว.png" width="200" height="193" alt=""/></p>
         
         
-		<?php
+		<p>
+		  <?php
 		
 		if(isset($_POST['select'])){
 		$selected_val = $_POST['select'];  
 		
-		echo "รายการชำระเงิน";"<br>";
+		echo "รายการชำระเงิน <br>";
 		echo "เส้น :     " .$selected_val."<br>";
 		}
 		if(isset($_POST['CheckboxGroup'])){
@@ -158,7 +160,11 @@ body,td,th {
 			echo "รวมเป็นเงิน :  ".$sum." บาท"."<br>";
 		}
 		?>
-	  </td>
+      </p>
+	  <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+	  <p><img src="45.png" width="437" height="305" alt=""/></p></td>
     </tr>
   </tbody>
 </table>
