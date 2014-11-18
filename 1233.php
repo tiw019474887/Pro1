@@ -110,7 +110,7 @@ body,td,th {
 	
 		if(isset($_POST['select'])){
 		$selected_val = $_POST['select'];  
-		echo "รายการชำระเงิน";<br>
+		echo "รายการชำระเงิน"."<br>";
 		echo "เส้น :     " .$selected_val."<br>";
 		}
 		if(isset($_POST['CheckboxGroup'])){
