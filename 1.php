@@ -136,7 +136,6 @@ body,td,th {
 			$sum = $sum+$aa;
 		}
 		}
-		else
 		if(isset($_POST['fvalue2'])){
 		$b = $_POST['fvalue2'];
 		$bb = $b*55;
@@ -145,7 +144,6 @@ body,td,th {
 			$sum = $sum+$bb;
 		}
 		}
-		else
 		if(isset($_POST['fvalue3'])){
 		$c = $_POST['fvalue3'];
 		$cc = $c*55;
@@ -154,13 +152,11 @@ body,td,th {
 			$sum = $sum+$cc;
 		}
 		}
-		else
 		if(isset($_POST['fvalue4'])){
 		if($_POST['fvalue4'] != " "){
 			echo "เพิ่มเติม : ".$_POST['fvalue4']."<br>";
 		}
 		}
-		else
 		if(isset($_POST['fvalue5'])){
 			echo "ชื่อผู้สั่ง:   ".$_POST['fvalue5']."<br>";
 			$sum = $sum+35;
