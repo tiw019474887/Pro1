@@ -136,7 +136,7 @@ body,td,th {
 		$b = $_POST['fvalue2'];
 		$bb = $b*55;
 		if($bb != 0){
-			echo "กุ้ง :   $b  ตัว     ".$bb." บาท"."<br>";
+			echo "กุ้ง :   $b  ตัว     "."=> ".$bb." บาท"."<br>";
 			$sum = $sum+$bb;
 		}
 		}
@@ -144,7 +144,7 @@ body,td,th {
 		$c = $_POST['fvalue3'];
 		$cc = $c*55;
 		if($cc != 0){
-			echo "ปลาหมึก :    $c  ตัว    ".$cc." บาท"."<br>";
+			echo "ปลาหมึก :    $c  ตัว    "."=> ".$cc." บาท"."<br>";
 			$sum = $sum+$cc;
 		}
 		}
