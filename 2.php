@@ -40,7 +40,7 @@ body,td,th {
       <td width="10">&nbsp;</td>
       <td width="307" ><h1><center>สั่งก๋วยเตี๋ยวต้มยำ</center></h1>
       <center><h3>บ้านลายจุดข้างวัง   </h3></center>
-      <form class="form-group" method="post" action="2.php" font="quark bold">    
+      <form class="form-group" method="post" action="3.php" font="quark bold">    
        	<div class="form-group">
           <label for="select"><h4>เลือกเส้น :</h4></label>
           <select  class="form-control" name="select" id="select" >
@@ -55,19 +55,19 @@ body,td,th {
         <p>
         <div class="form-group">
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="หมู" id="CheckboxGroup1_0">
+            <input type="checkbox" name="CheckboxGroup1[]" value="หมู" id="CheckboxGroup1_0">
             หมู</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="ลูกชิ้น" id="CheckboxGroup1_1">
+            <input type="checkbox" name="CheckboxGroup1[]" value="ลูกชิ้น" id="CheckboxGroup1_1">
             ลูกชิ้น</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="หมูสับ" id="CheckboxGroup1_2">
+            <input type="checkbox" name="CheckboxGroup1[]" value="หมูสับ" id="CheckboxGroup1_2">
             หมูสับ</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="ตับลวก" id="CheckboxGroup1_4">
+            <input type="checkbox" name="CheckboxGroup1[]" value="ตับลวก" id="CheckboxGroup1_4">
             ตับลวก</label>
       </p></div>
        <div class="form-group">
@@ -104,19 +104,19 @@ body,td,th {
         <p>
         <div class="form-group">
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="หมู" id="CheckboxGroup1_5">
+            <input type="checkbox" name="CheckboxGroup2[]" value="หมู" id="CheckboxGroup2_5">
             หมู</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="ลูกชิ้น" id="CheckboxGroup1_6">
+            <input type="checkbox" name="CheckboxGroup2[]" value="ลูกชิ้น" id="CheckboxGroup2_6">
             ลูกชิ้น</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="หมูสับ" id="CheckboxGroup1_7">
+            <input type="checkbox" name="CheckboxGroup2[]" value="หมูสับ" id="CheckboxGroup2_7">
             หมูสับ</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="ตับลวก" id="CheckboxGroup1_8">
+            <input type="checkbox" name="CheckboxGroup2[]" value="ตับลวก" id="CheckboxGroup2_8">
             ตับลวก</label>
       </p></div>
        <div class="form-group">
@@ -166,11 +166,11 @@ body,td,th {
 		echo "<h3>รายการชำระเงิน </h3><br>";
 		echo "เส้น :     " .$selected_val."<br>";
 		}
-		if(isset($_POST['CheckboxGroup'])){
-		for($i=0;$i<count($_POST["CheckboxGroup"]);$i++){
-		if(trim($_POST["CheckboxGroup"][$i]) != "")
+		if(isset($_POST['CheckboxGroup1'])){
+		for($i=0;$i<count($_POST["CheckboxGroup1"]);$i++){
+		if(trim($_POST["CheckboxGroup1"][$i]) != "")
 		{
-		$box = $_POST["CheckboxGroup"][$i];
+		$box = $_POST["CheckboxGroup1"][$i];
 		echo "ใส่ :     ".$box."<br>";
 		}
 		}
@@ -210,11 +210,11 @@ body,td,th {
 			echo "<h4>------ชามที่2-------</h4>"."<br>";
 		
 		}
-		if(isset($_POST['CheckboxGroup'])){
-		for($i=0;$i<count($_POST["CheckboxGroup"]);$i++){
-		if(trim($_POST["CheckboxGroup"][$i]) != "")
+		if(isset($_POST['CheckboxGroup2'])){
+		for($i=0;$i<count($_POST["CheckboxGroup2"]);$i++){
+		if(trim($_POST["CheckboxGroup2"][$i]) != "")
 		{
-		$box = $_POST["CheckboxGroup"][$i];
+		$box = $_POST["CheckboxGroup2"][$i];
 		echo "ใส่ :     ".$box."<br>";
 		}
 		}
@@ -247,6 +247,9 @@ body,td,th {
 		if(isset($_POST['fvalue9'])){
 		if($_POST['fvalue9'] != " "){
 			echo "เพิ่มเติม : ".$_POST['fvalue9']."<br>";
+			$sum2 = $sum2+35;
+			echo "เป็นเงิน :  ".$sum2." บาท"."<br>";
+
 		}
 		}
 		if(isset($_POST['fvalue5'])){

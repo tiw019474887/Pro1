@@ -55,19 +55,19 @@ body,td,th {
         <p>
         <div class="form-group">
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="หมู" id="CheckboxGroup1_0">
+            <input type="checkbox" name="CheckboxGroup1[]" value="หมู" id="CheckboxGroup1_0">
             หมู</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="ลูกชิ้น" id="CheckboxGroup1_1">
+            <input type="checkbox" name="CheckboxGroup1[]" value="ลูกชิ้น" id="CheckboxGroup1_1">
             ลูกชิ้น</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="หมูสับ" id="CheckboxGroup1_2">
+            <input type="checkbox" name="CheckboxGroup1[]" value="หมูสับ" id="CheckboxGroup1_2">
             หมูสับ</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="ตับลวก" id="CheckboxGroup1_4">
+            <input type="checkbox" name="CheckboxGroup1[]" value="ตับลวก" id="CheckboxGroup1_4">
             ตับลวก</label>
       </p></div>
        <div class="form-group">
@@ -104,19 +104,19 @@ body,td,th {
         <p>
         <div class="form-group">
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="หมู" id="CheckboxGroup1_5">
+            <input type="checkbox" name="CheckboxGroup2[]" value="หมู" id="CheckboxGroup2_5">
             หมู</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="ลูกชิ้น" id="CheckboxGroup1_6">
+            <input type="checkbox" name="CheckboxGroup2[]" value="ลูกชิ้น" id="CheckboxGroup2_6">
             ลูกชิ้น</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="หมูสับ" id="CheckboxGroup1_7">
+            <input type="checkbox" name="CheckboxGroup2[]" value="หมูสับ" id="CheckboxGroup2_7">
             หมูสับ</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="ตับลวก" id="CheckboxGroup1_8">
+            <input type="checkbox" name="CheckboxGroup2[]" value="ตับลวก" id="CheckboxGroup2_8">
             ตับลวก</label>
       </p></div>
        <div class="form-group">
@@ -153,19 +153,19 @@ body,td,th {
         <p>
         <div class="form-group">
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="หมู" id="CheckboxGroup1_9">
+            <input type="checkbox" name="CheckboxGroup3[]" value="หมู" id="CheckboxGroup3_9">
             หมู</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="ลูกชิ้น" id="CheckboxGroup1_10">
+            <input type="checkbox" name="CheckboxGroup3[]" value="ลูกชิ้น" id="CheckboxGroup3_10">
             ลูกชิ้น</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="หมูสับ" id="CheckboxGroup1_11">
+            <input type="checkbox" name="CheckboxGroup3[]" value="หมูสับ" id="CheckboxGroup3_11">
             หมูสับ</label>
           <br>
           <label>
-            <input type="checkbox" name="CheckboxGroup[]" value="ตับลวก" id="CheckboxGroup1_12">
+            <input type="checkbox" name="CheckboxGroup3[]" value="ตับลวก" id="CheckboxGroup3_12">
             ตับลวก</label>
       </p></div>
        <div class="form-group">
@@ -215,11 +215,11 @@ body,td,th {
 		echo "<h3>รายการชำระเงิน </h3><br>";
 		echo "เส้น :     " .$selected_val."<br>";
 		}
-		if(isset($_POST['CheckboxGroup'])){
-		for($i=0;$i<count($_POST["CheckboxGroup"]);$i++){
-		if(trim($_POST["CheckboxGroup"][$i]) != "")
+		if(isset($_POST['CheckboxGroup1'])){
+		for($i=0;$i<count($_POST["CheckboxGroup1"]);$i++){
+		if(trim($_POST["CheckboxGroup1"][$i]) != "")
 		{
-		$box = $_POST["CheckboxGroup"][$i];
+		$box = $_POST["CheckboxGroup1"][$i];
 		echo "ใส่ :     ".$box."<br>";
 		}
 		}
@@ -259,11 +259,11 @@ body,td,th {
 			echo "<h4>------ชามที่2-------</h4>"."<br>";
 		
 		}
-		if(isset($_POST['CheckboxGroup'])){
-		for($i=0;$i<count($_POST["CheckboxGroup"]);$i++){
-		if(trim($_POST["CheckboxGroup"][$i]) != "")
+		if(isset($_POST['CheckboxGroup2'])){
+		for($i=0;$i<count($_POST["CheckboxGroup2"]);$i++){
+		if(trim($_POST["CheckboxGroup2"][$i]) != "")
 		{
-		$box = $_POST["CheckboxGroup"][$i];
+		$box = $_POST["CheckboxGroup2"][$i];
 		echo "ใส่ :     ".$box."<br>";
 		}
 		}
@@ -304,11 +304,11 @@ body,td,th {
 			echo "<h4>------ชามที่3-------</h4>"."<br>";
 		
 		}
-		if(isset($_POST['CheckboxGroup'])){
-		for($i=0;$i<count($_POST["CheckboxGroup"]);$i++){
-		if(trim($_POST["CheckboxGroup"][$i]) != "")
+		if(isset($_POST['CheckboxGroup3'])){
+		for($i=0;$i<count($_POST["CheckboxGroup3"]);$i++){
+		if(trim($_POST["CheckboxGroup3"][$i]) != "")
 		{
-		$box = $_POST["CheckboxGroup"][$i];
+		$box = $_POST["CheckboxGroup3"][$i];
 		echo "ใส่ :     ".$box."<br>";
 		}
 		}
