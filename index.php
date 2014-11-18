@@ -40,8 +40,12 @@ body,td,th {
       <td width="10">&nbsp;</td>
       <td width="307" ><h1><center>สั่งก๋วยเตี๋ยวต้มยำ</center></h1>
       <center><h3>บ้านลายจุดข้างวัง   </h3></center>
+	   <form class="form-group" method="post" action="1233.php" font="quark bold">
+	   <button id="submit" name="ok" value="ok"
+							class="btn btn-warning">สั่ง</button>
+						<button input type="reset" name="Submit1" value="   RESET  " class="btn btn-danger">RESET</button>
+					</div>
        <td width="454" align="center" valign="top">
-		
 		<p><img src="ก๋วยเตี๋ยว.png" width="200" height="193" alt=""/></p>   
         <p><img src="45.png" width="437" height="305" alt=""/></p></td>
   </tbody>
