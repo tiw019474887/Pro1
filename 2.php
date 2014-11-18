@@ -163,7 +163,7 @@ body,td,th {
 		if(isset($_POST['select'])){
 		$selected_val = $_POST['select'];  
 		
-		echo "รายการชำระเงิน <br>";
+		echo "<h3>รายการชำระเงิน </h3><br>";
 		echo "เส้น :     " .$selected_val."<br>";
 		}
 		if(isset($_POST['CheckboxGroup'])){
@@ -203,7 +203,12 @@ body,td,th {
 		if(isset($_POST['fvalue4'])){
 		if($_POST['fvalue4'] != " "){
 			echo "เพิ่มเติม : ".$_POST['fvalue4']."<br>";
+			$sum = $sum+35;
+			echo "เป็นเงิน :  ".$sum." บาท"."<br>";
 		}
+		
+			echo "<h4>------ชามที่2-------</h4>"."<br>";
+		
 		}
 		if(isset($_POST['CheckboxGroup'])){
 		for($i=0;$i<count($_POST["CheckboxGroup"]);$i++){
@@ -215,40 +220,41 @@ body,td,th {
 		}
 		}
 		if(isset($_POST['fvalue6'])){
-		$a = $_POST['fvalue1'];
+		$a = $_POST['fvalue6'];
 		$aa = $a*15;
 		if($aa != 0){
 			echo "ไข่ยางมะตูม :   $a  ฟอง    ".$aa." บาท"."<br>";
-			$sum = 0;
-			$sum = $sum+$aa;
+			$sum2 = 0;
+			$sum2 = $sum2+$aa;
 		}
 		}
 		if(isset($_POST['fvalue7'])){
-		$b = $_POST['fvalue2'];
+		$b = $_POST['fvalue7'];
 		$bb = $b*55;
 		if($bb != 0){
 			echo "กุ้ง :   $b  ตัว     ".$bb." บาท"."<br>";
-			$sum = $sum+$bb;
+			$sum2 = $sum2+$bb;
 		}
 		}
 		if(isset($_POST['fvalue8'])){
-		$c = $_POST['fvalue3'];
+		$c = $_POST['fvalue8'];
 		$cc = $c*55;
 		if($cc != 0){
 			echo "ปลาหมึก :    $c  ตัว    ".$cc." บาท"."<br>";
-			$sum = $sum+$cc;
+			$sum2 = $sum2+$cc;
 		}
 		}
 		if(isset($_POST['fvalue9'])){
-		if($_POST['fvalue4'] != " "){
-			echo "เพิ่มเติม : ".$_POST['fvalue4']."<br>";
+		if($_POST['fvalue9'] != " "){
+			echo "เพิ่มเติม : ".$_POST['fvalue9']."<br>";
 		}
 		}
 		if(isset($_POST['fvalue5'])){
 			echo "ชื่อผู้สั่ง:   ".$_POST['fvalue5']."<br>";
-			$sum = $sum+35;
-			echo "รวมเป็นเงิน :  ".$sum." บาท"."<br>";
-		}
+			$sum2 = $sum2+35;
+			echo "เป็นเงิน :  ".$sum2." บาท"."<br>";
+			$sums=$sum+$sum2;
+			echo "รวมเป็นเงิน:".$sums."บาท"."<br>";		}
 		?>
       </p>
 	  <p>&nbsp;</p>
