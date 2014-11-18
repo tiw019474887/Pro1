@@ -137,6 +137,55 @@ body,td,th {
                 	(สิ่งที่ต้องการเพิ่มเติม เช่น ไม่ใส่ผัก)</label>
     		<input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="fvalue9">
                 </div>
+				<center>----ท่าที่3----</center>
+				 <form class="form-group" method="post" action="3.php" font="quark bold">    
+       	<div class="form-group">
+          <label for="select"><h4>เลือกเส้น :</h4></label>
+          <select  class="form-control" name="select" id="select" >
+             <option>เลือกเส้น</option>
+            <option>เส้นเล็ก</option>
+            <option>เส้นหมี่</option>
+            <option>เส้นบะหมี่</option>
+            <option>วุ้นเส้น</option>
+          </select>
+       	  </div>
+        </p>
+        <p>
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="CheckboxGroup[]" value="หมู" id="CheckboxGroup1_9">
+            หมู</label>
+          <br>
+          <label>
+            <input type="checkbox" name="CheckboxGroup[]" value="ลูกชิ้น" id="CheckboxGroup1_10">
+            ลูกชิ้น</label>
+          <br>
+          <label>
+            <input type="checkbox" name="CheckboxGroup[]" value="หมูสับ" id="CheckboxGroup1_11">
+            หมูสับ</label>
+          <br>
+          <label>
+            <input type="checkbox" name="CheckboxGroup[]" value="ตับลวก" id="CheckboxGroup1_12">
+            ตับลวก</label>
+      </p></div>
+       <div class="form-group">
+    	   <h4>ใส่อะไรเป็นพิเศษ:</h4>
+        <label for="fvalue1">ใส่ไข่ยางมะตูม 15 บาท/ฟอง:</label>
+			<input type="text" class="form-control" id="exampleInputEmail1" placeholder="กี่ฟอง" name="fvalue10">
+            
+           
+        <label for="fvalue2">ใส่กุ้ง 55 บาท/ตัว: </label>
+			<input type="text" class="form-control" id="exampleInputEmail1" placeholder="กี่ตัว" name="fvalue11">
+            
+            
+        <label for="fvalue3">ใส่ปลาหมึก 55 บาท/ตัว: </label>
+    		<input type="text" class="form-control" id="exampleInputEmail1" placeholder="กี่ตัว" name="fvalue12">
+          </div>
+                <div class="form-group">
+                	<label for="fvalue4"><h4>เพิ่มเติม: </h4> 
+                	(สิ่งที่ต้องการเพิ่มเติม เช่น ไม่ใส่ผัก)</label>
+    		<input type="text" class="form-control" id="exampleInputEmail1" placeholder="" name="fvalue13">
+                </div>
                 
                 <div class="form-group">
                 	<label for="fvalue5"><h4>ชื่อผู้สั่ง</h4></label>
@@ -215,7 +264,7 @@ body,td,th {
 		}
 		}
 		if(isset($_POST['fvalue6'])){
-		$a = $_POST['fvalue1'];
+		$a = $_POST['fvalue6'];
 		$aa = $a*15;
 		if($aa != 0){
 			echo "ไข่ยางมะตูม :   $a  ฟอง    ".$aa." บาท"."<br>";
@@ -224,7 +273,7 @@ body,td,th {
 		}
 		}
 		if(isset($_POST['fvalue7'])){
-		$b = $_POST['fvalue2'];
+		$b = $_POST['fvalue7'];
 		$bb = $b*55;
 		if($bb != 0){
 			echo "กุ้ง :   $b  ตัว     ".$bb." บาท"."<br>";
@@ -232,7 +281,7 @@ body,td,th {
 		}
 		}
 		if(isset($_POST['fvalue8'])){
-		$c = $_POST['fvalue3'];
+		$c = $_POST['fvalue8'];
 		$cc = $c*55;
 		if($cc != 0){
 			echo "ปลาหมึก :    $c  ตัว    ".$cc." บาท"."<br>";
@@ -240,8 +289,47 @@ body,td,th {
 		}
 		}
 		if(isset($_POST['fvalue9'])){
-		if($_POST['fvalue4'] != " "){
-			echo "เพิ่มเติม : ".$_POST['fvalue4']."<br>";
+		if($_POST['fvalue9'] != " "){
+			echo "เพิ่มเติม : ".$_POST['fvalue9']."<br>";
+		}
+		}
+		if(isset($_POST['CheckboxGroup'])){
+		for($i=0;$i<count($_POST["CheckboxGroup"]);$i++){
+		if(trim($_POST["CheckboxGroup"][$i]) != "")
+		{
+		$box = $_POST["CheckboxGroup"][$i];
+		echo "ใส่ :     ".$box."<br>";
+		}
+		}
+		}
+		if(isset($_POST['fvalue10'])){
+		$a = $_POST['fvalue10'];
+		$aa = $a*15;
+		if($aa != 0){
+			echo "ไข่ยางมะตูม :   $a  ฟอง    ".$aa." บาท"."<br>";
+			$sum = 0;
+			$sum = $sum+$aa;
+		}
+		}
+		if(isset($_POST['fvalue11'])){
+		$b = $_POST['fvalue11'];
+		$bb = $b*55;
+		if($bb != 0){
+			echo "กุ้ง :   $b  ตัว     ".$bb." บาท"."<br>";
+			$sum = $sum+$bb;
+		}
+		}
+		if(isset($_POST['fvalue12'])){
+		$c = $_POST['fvalue12'];
+		$cc = $c*55;
+		if($cc != 0){
+			echo "ปลาหมึก :    $c  ตัว    ".$cc." บาท"."<br>";
+			$sum = $sum+$cc;
+		}
+		}
+		if(isset($_POST['fvalue13'])){
+		if($_POST['fvalue13'] != " "){
+			echo "เพิ่มเติม : ".$_POST['fvalue13']."<br>";
 		}
 		}
 		if(isset($_POST['fvalue5'])){

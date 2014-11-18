@@ -40,7 +40,7 @@ body,td,th {
       <td width="10">&nbsp;</td>
       <td width="307" ><h1><center>สั่งก๋วยเตี๋ยวต้มยำ</center></h1>
       <center><h3>บ้านลายจุดข้างวัง   </h3></center>
-      <form class="form-group" method="post" action="1233.php" font="quark bold">    
+      <form class="form-group" method="post" action="1.php" font="quark bold">    
        	<div class="form-group">
           <label for="select"><h4>เลือกเส้น :</h4></label>
           <select  class="form-control" name="select" id="select" >
