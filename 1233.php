@@ -1,7 +1,8 @@
+<!-->V.1.0.0<!-->
 <!doctype html>
 <html>
 <head>
-<!-->V.1.0.0<!-->
+</head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,8 +13,9 @@
 @import url("1234/stylesheet.css");
 
 body {
-	background-color: #A1F4D4;
+	background-color: #FFFFFF;
 	;
+	
 }
 body,td,th {
 	font-family: "1234";
@@ -24,10 +26,10 @@ body,td,th {
 </head>
 
 <body>
-<table width="1000" border="0" align="center">
+<table width="785" border="0" align="center">
   <tbody>
     <tr>
-      <td colspan="3"><img src="ก๋วยเตี๋ยว.png" width="250" height="242" alt=""/></td>
+      <td colspan="3"><img src="Untitled-1.png" width="800" height="300" alt=""/></td>
     </tr>
     <tr>
       <td colspan="3"><marquee align="left"><font size="+1">
@@ -35,10 +37,10 @@ body,td,th {
       </font></marquee></td>
     </tr>
     <tr>
-      <td width="12">&nbsp;</td>
-      <td width="299"><h1>สั่งก๋วยเตี๋ยว</h1>
-        <p>
-   <form method="post" action="1233.php"font="quark bold">    
+      <td width="10">&nbsp;</td>
+      <td width="307" ><h1><center>สั่งก๋วยเตี๋ยวต้มยำ</center></h1>
+      <center><h3>บ้านลายจุดข้างวัง   </h3></center>
+      <form class="form-group" method="post" action="1233.php"font="quark bold">    
        	<div class="form-group">
           <label for="select"><h4>เลือกเส้น :</h4></label>
           <select  class="form-control" name="select" id="select" >
@@ -101,17 +103,18 @@ body,td,th {
 					</div>
 				</div>                          
         </form></td>
-      <td width="675" align="center" valign="top">
+      <td width="454" align="center" valign="top">
 		
 		<p><img src="ก๋วยเตี๋ยว.png" width="200" height="193" alt=""/></p>
         
         
-		<?php
-	
+		<p>
+		  <?php
+		
 		if(isset($_POST['select'])){
 		$selected_val = $_POST['select'];  
-		echo "รายการชำระเงิน"."<br>";
-		echo "ชามละ 35 บาท"."<br>";
+		
+		echo "รายการชำระเงิน <br>";
 		echo "เส้น :     " .$selected_val."<br>";
 		}
 		if(isset($_POST['CheckboxGroup'])){
@@ -127,7 +130,7 @@ body,td,th {
 		$a = $_POST['fvalue1'];
 		$aa = $a*15;
 		if($aa != 0){
-			echo "ไข่ยางมะตูม :   $a  ฟอง    "."=> ".$aa." บาท"."<br>";
+			echo "ไข่ยางมะตูม :   $a  ฟอง    ".$aa." บาท"."<br>";
 			$sum = 0;
 			$sum = $sum+$aa;
 		}
@@ -136,7 +139,7 @@ body,td,th {
 		$b = $_POST['fvalue2'];
 		$bb = $b*55;
 		if($bb != 0){
-			echo "กุ้ง :   $b  ตัว     "."=> ".$bb." บาท"."<br>";
+			echo "กุ้ง :   $b  ตัว     ".$bb." บาท"."<br>";
 			$sum = $sum+$bb;
 		}
 		}
@@ -144,7 +147,7 @@ body,td,th {
 		$c = $_POST['fvalue3'];
 		$cc = $c*55;
 		if($cc != 0){
-			echo "ปลาหมึก :    $c  ตัว    "."=> ".$cc." บาท"."<br>";
+			echo "ปลาหมึก :    $c  ตัว    ".$cc." บาท"."<br>";
 			$sum = $sum+$cc;
 		}
 		}
@@ -159,7 +162,11 @@ body,td,th {
 			echo "รวมเป็นเงิน :  ".$sum." บาท"."<br>";
 		}
 		?>
-	  </td>
+      </p>
+	  <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+	  <p><img src="45.png" width="437" height="305" alt=""/></p></td>
     </tr>
   </tbody>
 </table>
