@@ -115,6 +115,7 @@ body,td,th {
 		$selected_val = $_POST['select'];  
 		
 		echo "รายการชำระเงิน <br>";
+		echo "<h4>------ชามที่1-------</h4>"."<br>";
 		echo "เส้น :     " .$selected_val."<br>";
 		}
 		if(isset($_POST['CheckboxGroup'])){
@@ -159,6 +160,7 @@ body,td,th {
 		if(isset($_POST['fvalue5'])){
 			echo "ชื่อผู้สั่ง:   ".$_POST['fvalue5']."<br>";
 			$sum = $sum+35;
+			echo "<h4>------รวมทั้งหมด-------</h4>"."<br>";
 			echo "รวมเป็นเงิน :  ".$sum." บาท"."<br>";
 		}
 		?>

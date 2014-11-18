@@ -213,6 +213,7 @@ body,td,th {
 		$selected_val = $_POST['select'];  
 		
 		echo "<h3>รายการชำระเงิน </h3><br>";
+		echo "<h4>------ชามที่1-------</h4>"."<br>";
 		echo "เส้น :     " .$selected_val."<br>";
 		}
 		if(isset($_POST['CheckboxGroup1'])){
