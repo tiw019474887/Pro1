@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<!-->V.1.0.0<!-->
+</head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,8 +12,9 @@
 @import url("1234/stylesheet.css");
 
 body {
-	background-color: #A1F4D4;
+	background-color: #FFFFFF;
 	;
+	
 }
 body,td,th {
 	font-family: "1234";
@@ -24,10 +25,10 @@ body,td,th {
 </head>
 
 <body>
-<table width="1000" border="0" align="center">
+<table width="785" border="0" align="center">
   <tbody>
     <tr>
-      <td colspan="3"><img src="ก๋วยเตี๋ยว.png" width="250" height="242" alt=""/></td>
+      <td colspan="3"><img src="Untitled-1.png" width="800" height="300" alt=""/></td>
     </tr>
     <tr>
       <td colspan="3"><marquee align="left"><font size="+1">
@@ -35,10 +36,11 @@ body,td,th {
       </font></marquee></td>
     </tr>
     <tr>
-      <td width="12">&nbsp;</td>
-      <td width="299"><h1>สั่งก๋วยเตี๋ยว</h1>
-        <p>
-     </tbody>
+      <td width="10">&nbsp;</td>
+      <td width="307" ><h1><center>สั่งก๋วยเตี๋ยวต้มยำ</center></h1>
+      <center><h3>บ้านลายจุดข้างวัง   </h3></center>
+      
+  </tbody>
 </table>
 </body>
 </html>
